@@ -1,0 +1,13 @@
+SOLID
+
+S - Princípio da Responsabilidade única - Single Responsability
+O
+L
+I
+D
+
+
+S - 
+Um módulo ou uma classe deve ter um, e apenas um motivo para alteração.
+
+

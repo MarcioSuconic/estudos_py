@@ -1,0 +1,3 @@
+quando a gente coloca um self é para o objeto, é como se coloca-se o objeto no lugar do objeto
+
+quando a gente coloca cls é para a classe toda, mas precisa do @classmethod

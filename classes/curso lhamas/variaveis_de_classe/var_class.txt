@@ -1,0 +1,1 @@
+a variável estática da classe passa o valor para os objetos, agora, se definir a variável para o objeto, o objeto fica com o valor determinado.
