@@ -1,7 +1,7 @@
 SOLID
 
 S - Princípio da Responsabilidade única - Single Responsability
-O
+O - Princípio Aberto / Fechado
 L
 I
 D
@@ -10,4 +10,7 @@ D
 S - 
 Um módulo ou uma classe deve ter um, e apenas um motivo para alteração.
 
+O -
+estabelece que entidades de software(classes, módulos, funções, etc.) devem ser abertas para extensão,
+ mas fechadas para modificação, pode ser extendido, sem modificar seu código-fonte.
 
