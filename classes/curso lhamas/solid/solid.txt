@@ -2,8 +2,8 @@ SOLID
 
 S - Princípio da Responsabilidade única - Single Responsability
 O - Princípio Aberto / Fechado
-L
-I
+L - Princípio da Substituiçã de Liskov
+I - Segregação das Interfaces
 D
 
 
@@ -11,6 +11,18 @@ S -
 Um módulo ou uma classe deve ter um, e apenas um motivo para alteração.
 
 O -
-estabelece que entidades de software(classes, módulos, funções, etc.) devem ser abertas para extensão,
+estabelece que entidades de software(classes, módulos, funções, etc.)
+ devem ser abertas para extensão,
  mas fechadas para modificação, pode ser extendido, sem modificar seu código-fonte.
+
+L - 
+Objetos podem ser substiuídos por sub-tipos (classes herdeiras)
+ sem que isso afete a execução dorreta do programa. O bom convívio é
+ que uma classe filha pode substituir a classe mãe.
+A classe filha pode substituir a classe pai, se não há quebra do Princípio.
+Quando se trabalha com classe, as mães são sempre as mais genéricas...
+
+        Animal
+    Peixe   Mamífero
+    Salmão  Cachorro
 
