@@ -4,7 +4,7 @@ S - Princípio da Responsabilidade única - Single Responsability
 O - Princípio Aberto / Fechado
 L - Princípio da Substituiçã de Liskov
 I - Segregação das Interfaces
-D
+D - Inversão da dependência
 
 
 S - 
@@ -25,4 +25,18 @@ Quando se trabalha com classe, as mães são sempre as mais genéricas...
         Animal
     Peixe   Mamífero
     Salmão  Cachorro
+
+I - Segregação das Interfaces
+Em vez de ter uma interface geral, onde todos os elementos não usam todas as assinaturas, devemos 
+segregar as Interfaces.
+Estabelecer que uma classe não pode ser forçada a depender de uma Interface
+que ela não utiliza.
+Então segregar estas funcionalidades.
+
+D - Princípio da inversão da Dependência
+Onde se vê a beleza das Interfaces
+Em vez de fazer uma depêndencia direta de um objeto, dura e viril, faz-se
+uma Interface, e pode-se alternar as classes.
+Exemplo: sistema que puxa os dados de um banco de dados mysql, pode passar para sqlite, tranquilamente.
+
 
