@@ -85,7 +85,7 @@ def verificar_precos_passagens(data_inicial, n_dias_verificacao, origem_ida, des
 
         tempo_delta_volta = timedelta(days=dias_ficar_viagem)
 
-        data_leitura_volta = (data_inicial + tempo_delta_ida + tempo_delta_volta).date()  
+        data_leitura_volta = (data_inicial + tempo_delta_ida + tempo_delta_volta).date()
 
         dia_leitura = str(data_leitura_volta.day)
         mes_leitura = str(data_leitura_volta.month)
@@ -154,9 +154,9 @@ destino_ida = "PMW"
 origem_volta = "PMW"
 destino_volta = "SAO"
 dias_ficar_viagem = 8
-segundos_espera = 20 
+segundos_espera = 35
 
-resultado = verificar_precos_passagens(data_inicial,n_dias_verificacao,origem_ida,destino_ida,origem_volta,destino_volta,dias_ficar_viagem, segundos_espera)
+resultado = verificar_precos_passagens(data_inicial, n_dias_verificacao, origem_ida, destino_ida, origem_volta, destino_volta,dias_ficar_viagem, segundos_espera)
 print(resultado[0])
 print(resultado[1])
 print(resultado[2])
