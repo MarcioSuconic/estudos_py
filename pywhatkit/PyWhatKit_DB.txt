@@ -1,0 +1,10 @@
+Date: 13/3/2025
+Time: 20:13
+Phone Number: +5511965435595
+Message: Olá, boa noite! Esta é minha primeira mensagem automática pelo Python!
+--------------------
+Date: 13/3/2025
+Time: 20:17
+Phone Number: +5511967169420
+Message: Olá, boa noite! Esta é minha primeira mensagem automática pelo Python!
+--------------------
