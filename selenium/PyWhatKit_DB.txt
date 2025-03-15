@@ -58,3 +58,98 @@ Time: 21:15
 Phone Number: +5511967169420
 Message: LATAM, PMW - 3:10-SAO, 10/06/2025 ,488.17
 --------------------
+Date: 14/3/2025
+Time: 11:41
+Phone Number: +5511962996562
+Message: LATAM, GRU - 7:10-PMW, 14/06/2025, 359.34
+--------------------
+Date: 14/3/2025
+Time: 11:47
+Phone Number: +5511962996562
+Message: LATAM, GRU - 7:10-PMW, 15/06/2025, 359.34
+--------------------
+Date: 14/3/2025
+Time: 11:54
+Phone Number: +5511962996562
+Message: LATAM, GRU - 23:20-PMW, 16/06/2025, 359.34
+--------------------
+Date: 14/3/2025
+Time: 11:57
+Phone Number: +5511962996562
+Message: LATAM, PMW - 3:10-SAO, 24/06/2025, 374.26
+--------------------
+Date: 14/3/2025
+Time: 12:0
+Phone Number: +5511962996562
+Message: LATAM, GRU - 7:25-PMW, 17/06/2025, 359.34
+--------------------
+Date: 14/3/2025
+Time: 12:3
+Phone Number: +5511962996562
+Message: LATAM, GRU - 15:20-PMW, 13/05/2025, 359.34
+--------------------
+Date: 14/3/2025
+Time: 12:6
+Phone Number: +5511962996562
+Message: LATAM, PMW - 3:10-SAO, 21/05/2025, 374.26
+--------------------
+Date: 14/3/2025
+Time: 12:10
+Phone Number: +5511962996562
+Message: LATAM, PMW - 3:10-SAO, 22/05/2025, 374.26
+--------------------
+Date: 14/3/2025
+Time: 12:13
+Phone Number: +5511962996562
+Message: LATAM, GRU - 23:20-PMW, 15/05/2025, 359.34
+--------------------
+Date: 14/3/2025
+Time: 12:16
+Phone Number: +5511962996562
+Message: LATAM, PMW - 3:10-SAO, 23/05/2025, 374.26
+--------------------
+Date: 14/3/2025
+Time: 12:19
+Phone Number: +5511962996562
+Message: LATAM, GRU - 7:25-PMW, 16/05/2025, 359.34
+--------------------
+Date: 15/3/2025
+Time: 14:11
+Phone Number: +5511967169420
+Message: LATAM, GRU - 7:10-PMW, 01/06/2025, 342.34
+--------------------
+Date: 15/3/2025
+Time: 14:13
+Phone Number: +5511967169420
+Message: GOL, GRU - 19:50-PMW - 22:15, 01/06/2025, 399.58
+--------------------
+Date: 15/3/2025
+Time: 14:17
+Phone Number: +5511967169420
+Message: LATAM, GRU - 23:20-PMW, 02/06/2025, 342.34
+--------------------
+Date: 15/3/2025
+Time: 14:19
+Phone Number: +5511967169420
+Message: GOL, GRU - 19:50-PMW - 22:15, 02/06/2025, 342.58
+--------------------
+Date: 15/3/2025
+Time: 14:22
+Phone Number: +5511967169420
+Message: LATAM, PMW - 3:10-SAO, 10/06/2025, 357.26
+--------------------
+Date: 15/3/2025
+Time: 14:24
+Phone Number: +5511967169420
+Message: GOL, PMW - 23:00-GRU - 01:30, 10/06/2025, 357.5
+--------------------
+Date: 15/3/2025
+Time: 14:28
+Phone Number: +5511967169420
+Message: LATAM, GRU - 7:25-PMW, 03/06/2025, 342.34
+--------------------
+Date: 15/3/2025
+Time: 14:31
+Phone Number: +5511967169420
+Message: GOL, GRU - 19:50-PMW - 22:15, 03/06/2025, 342.58
+--------------------

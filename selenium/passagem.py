@@ -48,14 +48,6 @@ class Pegar_Preco_PassagemAerea:
             except:
                 pass
 
-        #<span font-weight="normal" color="#10004F" class="sc-aXZVg dxSNap latam-typography latam-typography--heading-04 sc-gEvEer flightInfostyles__TextHourFlight-sc__sc-edlvrg-4 fteAEG lcVysi">14:20</span>
-        #<span font-weight="normal" color="#303030" class="sc-aXZVg iBheDR latam-typography latam-typography--paragraph-base sc-gEvEer flightInfostyles__TextIATA-sc__sc-edlvrg-5 fteAEG kgsfDI">CGH</span>
-
-        #<span font-weight="normal" color="#10004F" class="sc-aXZVg dxSNap latam-typography latam-typography--heading-04 sc-gEvEer flightInfostyles__TextHourFlight-sc__sc-edlvrg-4 fteAEG lcVysi">13:40<span font-weight="normal" color="#10004F" class="sc-aXZVg dxSNap latam-typography latam-typography--paragraph-medium sc-gEvEer flightInfostyles__TextDaysDifference-sc__sc-edlvrg-6 fteAEG jrxwkA"></span></span>
-        #<span font-weight="normal" color="#303030" class="sc-aXZVg iBheDR latam-typography latam-typography--paragraph-base sc-gEvEer flightInfostyles__TextIATA-sc__sc-edlvrg-5 fteAEG kgsfDI">PMW</span>
-        #<span font-weight="normal" color="#303030" class="sc-aXZVg iBheDR latam-typography latam-typography--paragraph-base sc-gEvEer flightInfostyles__TextIATA-sc__sc-edlvrg-5 fteAEG kgsfDI">PMW</span>
-        #<span font-weight="normal" color="#303030" class="sc-aXZVg iBheDR latam-typography latam-typography--paragraph-base sc-gEvEer flightInfostyles__TextIATA-sc__sc-edlvrg-5 fteAEG kgsfDI">PMW</span>
-        #<span font-weight="normal" color="#303030" class="sc-aXZVg iBheDR latam-typography latam-typography--paragraph-base sc-gEvEer flightInfostyles__TextIATA-sc__sc-edlvrg-5 fteAEG kgsfDI">PMW</span>
         if self.compania == "LATAM":
 
             try:
@@ -88,7 +80,8 @@ class Pegar_Preco_PassagemAerea:
                 hora = hora + 1
 
             print(self.numero_whattsapp)            
-            pywhatkit.sendwhatmsg(self.numero_whattsapp, msg, hora, minutos+2, 25)
+
+            pywhatkit.sendwhatmsg(self.numero_whattsapp, msg, hora, minutos+2, 30)
         
         self.inserir_no_banco_de_dados()        
         navegador.close()
@@ -98,7 +91,7 @@ class Pegar_Preco_PassagemAerea:
             valor_float = self.entra_valor_str_sai_float_brl(valor_str)
         if self.compania == "GOL":
             valor_float = self.entra_valor_str_sai_float_reais(valor_str)
-        return(valor_float)        
+        return(valor_float)
 
     def retorna_url(self, compania:str , dia_viagem:str , mes_viagem:str , ano_viagem: str, origem, destino) -> str:
         if compania == "LATAM":
@@ -251,7 +244,7 @@ def lista_datas(data_inicial, dias_para_ficar_tirando_os_dias_de_viagem, dias_pa
 
     return(lista_datas_ida, lista_dias_ida, lista_meses_ida, lista_anos_ida, lista_datas_volta, lista_dias_volta, lista_meses_volta, lista_anos_volta)   
      
-def start_geral(data_inicial, dias_para_ficar_tirando_os_dias_de_viagem, dias_para_pesquisar, origem, destino,tempo_espera_segundos_site, avisar_valor, numero_whattsapp):
+def start_geral(data_inicial, dias_para_ficar_tirando_os_dias_de_viagem, dias_para_pesquisar, origem, destino,tempo_espera_segundos_site, avisar_valor, numero_whattsapp, verificacoes):
 
     lista_datas_str = lista_datas(data_inicial, dias_para_ficar_tirando_os_dias_de_viagem, dias_para_pesquisar)
     tamanho = len(lista_datas_str[0])
@@ -287,7 +280,9 @@ dias_para_ficar_tirando_os_dias_de_viagem = 7
 dias_para_pesquisar = 92
 origem = "SAO"
 destino = "PMW"
-tempo_espera_segundos_site = 18
-avisar_valor = 500
+tempo_espera_segundos_site = 10
+avisar_valor = 100
 numero_whattsapp = "+5511967169420"
-start_geral(data_inicial,dias_para_ficar_tirando_os_dias_de_viagem,dias_para_pesquisar, origem, destino, tempo_espera_segundos_site, avisar_valor,numero_whattsapp)
+verificacoes = 0
+start_geral(data_inicial,dias_para_ficar_tirando_os_dias_de_viagem,dias_para_pesquisar, origem, destino, tempo_espera_segundos_site, avisar_valor,numero_whattsapp, verificacoes)
+
