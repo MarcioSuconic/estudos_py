@@ -275,7 +275,7 @@ def start_geral(data_inicial, dias_para_ficar_tirando_os_dias_de_viagem, dias_pa
         Pegar_Preco_PassagemAerea(compania,dia_leitura_volta, mes_leitura_volta, ano_leitura_volta, destino, origem, tempo_espera_segundos_site, avisar_valor,numero_whattsapp)
 
 
-data_inicial = datetime(day=1, month=6, year=2025)
+data_inicial = datetime(day=16, month=5, year=2025)
 dias_para_ficar_tirando_os_dias_de_viagem = 7
 dias_para_pesquisar = 92
 origem = "SAO"
