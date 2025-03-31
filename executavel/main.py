@@ -1,18 +1,19 @@
 import matplotlib.pyplot as plt
-from dist.conexao import executa_DQL, executa_DML
-from tkinter import messagebox
 
 fig = plt.figure()
 ax = fig.add_subplot()
 
-ax.plot([1,2,3,4,5],[1,4,9,16,25])
 
-sql = 'CREATE TABLE "passagens_new" ("id" INTEGER, "origem" TEXT,"destino" TEXT,"data_pesquisa" TEXT,"data_passagem" TEXT,"valor" REAL, "compania" TEXT, PRIMARY KEY("id" AUTOINCREMENT))'
-executa_DML(sql)
+#[[8, 2024], [9, 2024], [10, 2024], [11, 2024], [12, 2024], [1, 2025], [2, 2025], [3, 2025]]
+#[6803.8, 5816.1, 4068.2, 4661.8, 3490.4, 8102.1, 5069.7, 4771.2]
+#[3496.6, 3490.0, 2702.7, 3273.1, 2804.0, 5834.3, 3651.0, 3049.0]
 
-sql = "SELECT * FROM passagens_new"
-result=executa_DQL(sql)
+lista_meses = ['8/2024', '9/2024', '10/2024', '11/2024', '12/2024', '1/2025', '2/2025', '3/2025']
+lista_valores = [6803.8, 5816.1, 4068.2, 4661.8, 3490.4, 8102.1, 5069.7, 4771.2]
+ax.plot(lista_meses,lista_valores)
 
-messagebox.showinfo("Aviso",result)
+lista_meses = ['8/2024', '9/2024', '10/2024', '11/2024', '12/2024', '1/2025', '2/2025', '3/2025']
+lista_valores = [3496.6, 3490.0, 2702.7, 3273.1, 2804.0, 5834.3, 3651.0, 3049.0]
+ax.plot(lista_meses, lista_valores)
 
 plt.show()

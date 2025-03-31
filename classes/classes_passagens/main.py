@@ -111,6 +111,7 @@ class Passagens:
         for numero in self.lista_numeros_whattsapp:            
             
             self.agora = datetime.now()
+
             self.hora = self.agora.hour
             self.minutos = self.agora.minute
 
@@ -125,6 +126,7 @@ class Passagens:
             else:
                 self.minutos += 2
 
+            print('enviando a mensagem.....')
             pywhatkit.sendwhatmsg(numero, self.mensagem_para_zap, self.hora, self.minutos, 90)
 
     def retorna_preco(self, compania, valor_str) -> float:
@@ -331,17 +333,17 @@ class Passagens:
     #def cria_mensagem_para_whattsapp(self):
 
 apagar_todo_o_banco_de_dados = True
-tempo_espera_segundos = 12
-dia_inicial = 10
-mes_inicial = 8
+tempo_espera_segundos = 18
+dia_inicial = 16
+mes_inicial = 5
 ano_inicial= 2025
-dias_para_pesquisar = 31
-valor_abaixo_de_para_avisar = 400
+dias_para_pesquisar = 14
+valor_abaixo_de_para_avisar = 2000
 dias_livres_na_viagem = 7
 lista_operadoras = ["LATAM","GOL"] #["LATAM","GOL"]
 origem = "SAO"
 destino = "PMW"
 ida_e_volta = True
-lista_numeros_whattsapp = ["+5511962996562","+5511967169420"] # ["+5511962996562","+5511967169420"]
+lista_numeros_whattsapp = ["+5511962996562","+5511967169420"] # ["+5511962996562","+5511967169420"] "+5511982841612"
 
 viagem = Passagens(dia_inicial, mes_inicial, ano_inicial, dias_para_pesquisar, valor_abaixo_de_para_avisar, dias_livres_na_viagem, lista_operadoras, tempo_espera_segundos, origem, destino, ida_e_volta, lista_numeros_whattsapp, apagar_todo_o_banco_de_dados)
