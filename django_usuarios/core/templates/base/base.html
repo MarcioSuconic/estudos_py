@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Autenticação</title>
+</head>
+
+<style>
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        
+        <ul class="nav">
+            <li class="nav-item"> <a href="{% url 'home' %}" class="nav-link" aria-current="page">HOME</a> </li>
+            <li class="nav-item"> <a href="{% url 'pagina1' %}" class="nav-link">Página 1</a> </li>
+            <li class="nav-item"> <a href="{% url 'pagina2' %}" class="nav-link">Página 2</a> </li>
+            {% if request.user.is_authenticated %}
+                <li class="nav-item"> <a href="{% url 'logout_forcado' %}" class="nav-link">SAIR</a> </li>
+            {% endif %}
+        </ul>
+
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

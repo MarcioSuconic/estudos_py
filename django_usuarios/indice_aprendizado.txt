@@ -1,0 +1,10 @@
+Agenda
+- Entendo a configuração que eu estou usando
+- Configurar as urls para login/logout
+- Configurar para qual página vai após o login/logout
+- Proteger as views que precisam de login para acesso
+- Criar a página de login
+- Criar o link para logout
+- Exibir o username do usuário logado
+
+Página 1 ou 2 só pode ser acessada por quem está logado.
